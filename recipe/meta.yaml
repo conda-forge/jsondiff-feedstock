@@ -1,5 +1,5 @@
 {% set name = "jsondiff" %}
-{% set version = "1.1.1" %}
+{% set version = "1.1.2" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2d0437782de9418efa34e694aa59f43d7adb1899bd9a793f063867ddba8f7893
+  sha256: 7e18138aecaa4a8f3b7ac7525b8466234e6378dd6cae702b982c9ed851d2ae21
 
 build:
   number: 0

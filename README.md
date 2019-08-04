@@ -1,7 +1,3 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About jsondiff
 ==============
 
@@ -18,8 +14,15 @@ Summary: Diff JSON and JSON-like structures in Python
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/jsondiff-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/jsondiff-feedstock)
+
+<table><tr><td>All platforms:</td>
+    <td>
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=3021&branchName=master">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/jsondiff-feedstock?branchName=master">
+      </a>
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================

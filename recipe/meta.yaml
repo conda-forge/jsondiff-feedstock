@@ -14,20 +14,23 @@ build:
   noarch: python
   entry_points:
     - jdiff=jsondiff.cli:main
-  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv '
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
   run:
-    - python
+    - python >=3.6
 
 test:
   imports:
     - jsondiff
   commands:
     - jdiff --help
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/ZoomerAnalytics/jsondiff

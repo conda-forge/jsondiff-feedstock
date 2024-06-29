@@ -1,5 +1,5 @@
 {% set name = "jsondiff" %}
-{% set version = "2.0.0" %}
+{% set version = "2.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2795844ef075ec8a2b8d385c4d59f5ea48b08e7180fce3cb2787be0db00b1fb4
+  sha256: c7dfd4f8c9307500a536e9b93492b2c1ba62dac2b3c5189aa6e37d63b427b4d8
 
 build:
   number: 0
@@ -22,6 +22,11 @@ requirements:
     - python >=3.6
   run:
     - python >=3.6
+    # - setuptools-scm 
+    # - pyyaml 
+    # - python-build 
+    # - pytest 
+    # - hypothesis 
 
 test:
   imports:

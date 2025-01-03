@@ -1,13 +1,13 @@
 {% set name = "jsondiff" %}
-{% set version = "2.1.1" %}
+{% set version = "2.2.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c7dfd4f8c9307500a536e9b93492b2c1ba62dac2b3c5189aa6e37d63b427b4d8
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 658d162c8a86ba86de26303cd86a7b37e1b2c1ec98b569a60e2ca6180545f7fe
 
 build:
   number: 0
@@ -25,7 +25,11 @@ requirements:
     - wheel
   run:
     - python >=3.8
-    - pyyaml
+    - pyyaml 
+    # - setuptools-scm 
+    # - python-build 
+    # - pytest 
+    # - hypothesis 
 
 test:
   imports:
